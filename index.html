@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Admission Form</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" required placeholder="Enter your age">
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="Male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="other">Other</label>
+                    <input type="radio" id="other" name="gender" value="Other">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" required placeholder="Enter your address"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="qualification">Highest Educational Qualification</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="" disabled selected>Select qualification</option>
+                    <option value="High School">High School</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+
+            <div class="submit-btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
